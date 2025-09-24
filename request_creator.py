@@ -1,4 +1,4 @@
-from api_data import WeatherRequest, Language, Units
+from api_models import WeatherRequest, Language, Units
 
 def get_weekly_request(api_key : str, lat : float, lon : float) -> WeatherRequest:
     """Создает запрос для получения недельного прогноза погоды"""
