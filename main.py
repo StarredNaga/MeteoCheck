@@ -1,5 +1,7 @@
 import argparse
+from argument_types import lat, lon
 
+# Создает парсер для аргументов командной строки
 def create_parser():
     parser = argparse.ArgumentParser(
         description='Приложение для получения  погоды в указанном городе',
@@ -7,11 +9,15 @@ def create_parser():
     )
 
     parser.add_argument(
-        '--city',
-        '-c',
-        type=str,
-        required=True,
-        help='Название города для получения погоды'
+        '--lat',
+        type=lat,
+        help='Широта'
+    )
+
+    parser.add_argument(
+        '--lon',
+        type=lon,
+        help='Долгота'
     )
 
     return parser

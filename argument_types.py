@@ -1,6 +1,6 @@
 from argparse import ArgumentError
 
-
+# Широта
 def lat(inpt : str) -> float:
 
     latitude = float(inpt)
@@ -9,6 +9,7 @@ def lat(inpt : str) -> float:
 
     return latitude
 
+# Долгота
 def lon(inpt: str) -> float:
 
     longitude = float(inpt)
